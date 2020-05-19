@@ -6,6 +6,6 @@ class CreatePosts < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-    has_one_attached :iemg
+
   end
 end
