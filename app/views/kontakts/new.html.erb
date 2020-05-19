@@ -1,0 +1,23 @@
+
+<div class="tresc">
+    <h1> Skontaktuj się ze mną! </h1>
+    <br>
+    <br>
+    <%= form_for @kontakt do |f| %>
+    <%= f.label :imie %>
+    <%= f.text_field :name, required: true %>
+    <br>
+    <%= f.label :email %>
+    <%= f.email_field :email, required: true %>
+    <br>
+    <%= f.label :wiadomosc %>
+    <%= f.text_area :message, as: :text %>
+    <br>
+    <div class="hidden">
+    <%= f.label :TotalnieNieCaptcha %>
+    <%= f.text_field :nickname, hint: 'pozostaw puste' %>
+    </div>
+    <%= f.submit "Wyślij", class: "button" %>
+
+  <% end %>
+</div>
