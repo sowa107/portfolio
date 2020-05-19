@@ -34,16 +34,22 @@ ActiveRecord::Schema.define(version: 2020_05_16_150044) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 085efea12d40b452001ee47fe96ec8f6d10b1acd
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+<<<<<<< HEAD
 =======
 # Could not dump table "posts" because of following StandardError
 #   Unknown type 'image' for column 'iemg'
 >>>>>>> a0b3a5132af618d084a562d56882f4c2b210b449
+=======
+>>>>>>> 085efea12d40b452001ee47fe96ec8f6d10b1acd
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
 end
