@@ -1,0 +1,16 @@
+<div class="tresc">
+<% @posts = Post.all.order("created_at DESC") %>
+<% @posts.each do |post| %>
+<% @obrazek= post.iemg %>
+<div class="projekty_prev">
+  <div class="projekty_prev_img_container">
+    <img src= "<%=(url_for(@obrazek))%>" class="projekty_prev_img">
+  </div>
+  <div class="projekty_prev_txt_container">
+    <h1><%= post.title %></h1>
+    <h2><%=truncate(post.content, :length => 35) %></h2>
+    <%=link_to "Zobacz Projekt ->", post, class: "projekty_prev_link" %>
+  </div>
+  </div>
+<% end %>
+</div>

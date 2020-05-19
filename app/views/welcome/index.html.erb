@@ -1,0 +1,12 @@
+<% @post = Post.order("created_at").last %>
+
+<div class="tresc_noscroll">
+  <div id="projimg_index_containter"><img src="<%= (url_for(@post.iemg)) %>" id="projimg_index"></div>
+  <div id="text_index">
+  <h1 id="tytul_index"><%= @post.title %></h1>
+  <h2 id="opis_index"><%= @post.content %></h2>
+    <%=link_to "Przejdź do projektu ->", @post, id: "link_index" %>
+    
+  </div>
+
+</div>

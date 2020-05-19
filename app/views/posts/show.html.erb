@@ -1,0 +1,12 @@
+<% @obrazek= (url_for(@post.iemg)) %>
+<div id="projekt_main_img_containter" style=" background-image: url(<%=@obrazek%>);"></div>
+<h1 id="projekt_baner"><%= @post.title %></h1>
+<div class="tresc">
+  <div id="text_projekt">
+  <h1 id="tytul_projekt"><%= @post.title %></h1>
+  <h2 id="opis_projekt"><%= @post.content %></h2>
+  </div>
+
+</div>
+<%= link_to "edit", edit_post_path(@post) %>
+<%= link_to "delete", post_path(@post), method: :delete, data: {confirm: "sure?"} %>

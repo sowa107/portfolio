@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Patryk Sowa - Developer Batyskaf</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    </head>
+    <body>
+        <header id="header">
+            <%= link_to "", root_path, class: "head_logo" %> 
+          <div id="nawigacja">
+            <%=link_to "PROJEKTY", "/posts", class: "nav_elem" %>
+            <%=link_to "O MNIE", "/omnie", class: "nav_elem" %>
+            <%=link_to "KONTAKT", "/kontakt", class: "nav_elem" %>
+          </div>
+        </header>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
