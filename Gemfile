@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
+gem "google-cloud-storage", "~> 1.8", require: false
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

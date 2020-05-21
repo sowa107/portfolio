@@ -50,12 +50,18 @@ h1{
   letter-spacing: 0.1em;
 }
 
-h2{
+h2, li{
   font-size: 1.5em;
   color: $bialy;
   font-family: "ubuntu mono", sans-serif;
 
 }
+
+ul{
+  margin-left: -4%;
+}
+
+
 
 
 #header{
