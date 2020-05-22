@@ -11,7 +11,7 @@
     </head>
     <body>
         <header id="header">
-            <%= link_to "", root_path, class: "head_logo" %> 
+            <%= link_to "", root_path, class: "head_logo" %>
           <div id="nawigacja">
             <%=link_to "PROJEKTY", "/posts", class: "nav_elem" %>
             <%=link_to "O MNIE", "/omnie", class: "nav_elem" %>
@@ -19,6 +19,30 @@
           </div>
         </header>
 
+        <header class="header_mobile_c">
+        <span id="header_mobile">
+            <%= link_to "", root_path, class: "head_logo_m" %>
+            <button class="hamburger" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner">
+                </span>
+              </span>
+            </button>
+            </span>
+            <span class="nav_mobile_c">
+              <%=link_to "PROJEKTY", "/posts", class: "nav_mobile" %>
+              <%=link_to "O MNIE", "/omnie", class: "nav_mobile" %>
+              <%=link_to "KONTAKT", "/kontakt", class: "nav_mobile" %>
+            </span>
+        </header>
+        <script>
+          var hamburger = document.querySelector(".hamburger");
+          var nav_mobile_c = document.querySelector(".nav_mobile_c");
+          hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("is-active");
+            nav_mobile_c.classList.toggle("is-active");
+          });
+        </script>
   <body>
     <%= yield %>
   </body>
