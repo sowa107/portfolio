@@ -8,4 +8,6 @@ get 'welcome/index'
 root 'welcome#index'
 
 get "/:page" => "static#show"
+
+get "*path"  => redirect('/')
 end
