@@ -35,6 +35,14 @@
               <%=link_to "KONTAKT", "/kontakt", class: "nav_mobile" %>
             </span>
         </header>
+        <% if notice %>
+               <p class="notice"><%= notice %></p>
+               <%elsif alert %>
+               <p class="alert"><%= alert %></p>
+        <%end%>
+
+
+
         <script>
           var hamburger = document.querySelector(".hamburger");
           var nav_mobile_c = document.querySelector(".nav_mobile_c");
