@@ -93,7 +93,7 @@ ul{
 margin-top: -0.5%;
 }
 
-.tresc{
+.tresc_scroll{
   margin: 3.5em;
   overflow: auto;
 }
@@ -348,8 +348,8 @@ display:none;
 }
 
 .projekty_prev_txt_container{
-  width: 91vw;
-      overflow: auto;
+      width: 91vw;
+      overflow: hidden;
       height: 35vh;
       margin-top: -2vh;
       margin-left:3vw;
